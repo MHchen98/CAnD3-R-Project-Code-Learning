@@ -11,7 +11,7 @@
 #   - This script cleans and prepares data extracted from Public Use Micro File 
 #   - Data citation: Statistics Canada. 2019. Census of Population, 2016 [Canada] Public Use Microdata File (PUMF): Individuals File. Statistics Canada [producer and distributor], accessed September 10, 2021. ID: pumf-98M0001-E-2016-individuals.
 #   - Handles missing values and recode vairables
-#   - Outputs a descriptive table and ANOVA
+#   - Outputs a descriptive table and Logistic regression graph
 
 
 ################################################################## Data Cleaning
