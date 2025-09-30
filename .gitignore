@@ -12,3 +12,13 @@
 Oxford/data/hearing_pums.csv
 RRWM/.RData
 RRWM/data/Census 2016/pumf-98M0001-E-2016-individuals_F1.csv
+# R/RStudio artifacts
+.Rhistory
+.RData
+.RDataTmp
+.Rproj.user/
+
+# Project-specific large data (don’t version)
+Oxford/data/hearing_pums.csv
+RRWM/.RData
+RRWM/data/Census 2016/pumf-98M0001-E-2016-individuals_F1.csv
