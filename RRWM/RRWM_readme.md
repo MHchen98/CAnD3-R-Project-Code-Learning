@@ -2,3 +2,4 @@
 - The data file should be located in the data folder under RRWM
 - Use Codebook.pdf for online preview
 - Codebook.doc / .pdf includes recoding and data cleaning process
+- Environment: RStudio, macOS 15.6.1 (24G90)

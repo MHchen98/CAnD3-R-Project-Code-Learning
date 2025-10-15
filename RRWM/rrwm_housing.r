@@ -201,42 +201,15 @@ df_summary <- df |>
 view(df_summary)
 
 
-######################################################## ANOVA (Analysis of Variance)
-
-model_tenure <- glm(tenure ~ agegrp_5 + marr + female + income_q + edu_college + province, family=binomial, data=df_tenure)
-model_mortgage <- glm(mortgage ~ agegrp_5 + marr + female + income_q + edu_college + province, family=binomial, data=df_mortgage)
+######################################################## Logistic Regression Analysis
 
 
-# Visualization
+# loading packages for Visualization
 library(broom)
 library(ggplot2)
 library(stringr)
 library(forcats)
-
-# 1. Fit models
-model_mortgage <- glm(
-  mortgage ~ female + marr + agegrp_5 + income_q + edu_college + province,
-  data = df,
-  family = binomial
-)
-
-model_tenure <- glm(
-  tenure ~ female + marr + agegrp_5 + income_q + edu_college + province,
-  data = df,
-  family = binomial
-)
-
-# 2. Tidy output with confidence intervals
-coef_mortgage <- tidy(model_mortgage, conf.int = TRUE) |>
-  mutate(model = "Mortgage")
-
-coef_tenure <- tidy(model_tenure, conf.int = TRUE) |>
-  mutate(model = "Tenure")
-
-# Load packages
 library(dplyr)
-library(ggplot2)
-library(broom)
 library(forcats)
 library(stringr)
 
